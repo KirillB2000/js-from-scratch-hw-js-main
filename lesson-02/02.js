@@ -11,7 +11,7 @@ let dice1 = Math.floor((Math.random() * 6) + 1)
 let dice2 = Math.floor((Math.random() * 6) + 1)
 let isWinningDouble // your code
 
-isWinningDouble = dice1 === dice2 ? true : false
+isWinningDouble = dice1 === dice2 && (dice1 > 3 && dice2 > 3) ? true : false
 
 console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)
