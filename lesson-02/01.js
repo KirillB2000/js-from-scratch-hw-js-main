@@ -18,6 +18,8 @@ let isAccess
 
 // your code
 
-if (isAdmin && isVerifiedUser && isVerifiedUser && hasSpecialPermission && hasTemporaryPass) {
+if ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) {
     isAccess = true
+} else {
+    isAccess - false
 }
