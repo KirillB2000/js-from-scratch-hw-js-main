@@ -2,8 +2,8 @@
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
 function isEven(num) {
-    return num % 2 === 1 ? false : true
+    return num % 2 === 0
 }
 
 
-console.log (isEven (5))
+console.log (isEven (2))
