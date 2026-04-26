@@ -15,7 +15,7 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 
 function includesElement(array, element) {
     let result = false
-    for (i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         array[i] === element ? result = true : ''
     }
 
@@ -24,3 +24,5 @@ function includesElement(array, element) {
 }
 
 console.log( includesElement([1, 2, 3], 2));
+
+module.exports = includesElement
