@@ -17,7 +17,15 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-const includesElement = require('./01')
+function includesElement(array, element) {
+    let result = false
+    for (let i = 0; i < array.length; i++) {
+        array[i] === element ? result = true : ''
+    }
+
+    return result
+
+}
 
 function findCommonElements(array1, array2) {
     let newArr = []
@@ -28,4 +36,4 @@ function findCommonElements(array1, array2) {
     return newArr
 }
 
-console.log(findCommonElements([1, 2, 3], [2, 3, 4])); 
+console.log(findCommonElements([1, 2, 3], [2, 3, 4]));
