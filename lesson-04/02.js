@@ -15,7 +15,15 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-const includesElement = require('./01')
+function includesElement(array, element) {
+    let result = false
+    for (let i = 0; i < array.length; i++) {
+        array[i] === element ? result = true : ''
+    }
+
+    return result
+
+}
 
 function findUniqueElements(array) {
     let newArr = []

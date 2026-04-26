@@ -24,5 +24,3 @@ function includesElement(array, element) {
 }
 
 console.log( includesElement([1, 2, 3], 2));
-
-module.exports = includesElement
